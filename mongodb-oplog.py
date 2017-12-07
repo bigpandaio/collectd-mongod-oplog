@@ -40,7 +40,7 @@ class MongoDBOplog(object):
                 v.values = (self.counters[db][collection],)
                 v.dispatch()
         # Output per-database counters
-        for collection in self.db_counters:
+        for db in self.db_counters:
             v = collectd.Values()
             v.plugin = self.plugin_name
             v.plugin_instance = db
