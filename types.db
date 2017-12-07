@@ -1,1 +1,2 @@
 oplog_datarate                     value:COUNTER:0:U
+oplog_datarate_per_collection      value:COUNTER:0:U
